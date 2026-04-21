@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Erica Bertolozzi — Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,18 +28,18 @@
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg:      #0f0e0d;
-        --bg2:     #1a1916;
-        --bg3:     #242220;
-        --text:    #f5f0e8;
-        --text2:   #8a8278;
-        --text3:   #4a4540;
+        --bg:      #1c1a24;
+        --bg2:     #242030;
+        --bg3:     #2e2a3a;
+        --text:    #f0ecff;
+        --text2:   #9e99b0;
+        --text3:   #5e5a70;
         --v:       #a78bfa;
-        --vl:      #1e1533;
+        --vl:      #2a1f4a;
         --vm:      #8b5cf6;
         --co:      #fb7185;
-        --col:     #2d1018;
-        --border:  rgba(255,255,255,0.08);
+        --col:     #3d1020;
+        --border:  rgba(255,255,255,0.09);
         --shadow:  rgba(0,0,0,0.3);
       }
     }
@@ -413,6 +414,14 @@
       <a href="#projects">Work</a>
       <a href="#contact">Contact</a>
       <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Say hello</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
     </div>
     <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -605,15 +614,14 @@
   <!-- FOOTER -->
   <footer>
     <!-- EDIT: Update name -->
-    <span>Designed & built by Your Name</span>
+    <span>Designed & built by Erica Bertolozzi</span>
     <span>2026</span>
   </footer>
 
   <script>
     /* ── TYPING EFFECT ── */
-    // EDIT: Change your name and the rotating roles
     const YOUR_NAME = 'Erica';
-    const ROLES = ['design.', 'build.', 'ship things.', 'sweat the details.'];
+    const ROLES = ['craft interfaces.', 'lead with empathy.', 'think visually.', 'make it work.'];
 
     const nameEl = document.getElementById('typedName');
     const roleEl = document.getElementById('typedRole');
