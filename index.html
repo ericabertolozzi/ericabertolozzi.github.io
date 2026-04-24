@@ -969,7 +969,7 @@
     }
 
     .fun-card.playing {
-      border-color: rgba(109, 40, 217, 0.25);
+      border-color: rgba(99, 43, 188, 0.25);
     }
 
     .fun-card.playing::before {
@@ -1011,7 +1011,7 @@
     }
 
     .fun-card.music {
-      border-color: rgba(29, 78, 216, 0.25);
+      border-color: rgba(97, 131, 224, 0.25);
     }
 
     .fun-card.music::before {
@@ -1021,7 +1021,7 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: #09122b;
+      background: #5677d3;
     }
 
     .fun-card.food {
@@ -1078,6 +1078,14 @@
 
     .watching .now-dot::before {
       background: var(--co);
+    }
+
+    .training .now-dot {
+      color: #14b8a6;
+    }
+
+    .training .now-dot::before {
+      background: #14b8a6;
     }
 
     /* Mobile */
@@ -1274,16 +1282,22 @@
       <!-- EDIT: Update skills -->
       <div class="about-pills reveal from-right">
         <span class="ap v">React</span>
+        <span class="ap v">Angular</span>
+        <span class="ap v">Next.js</span>
         <span class="ap v">Python</span>
+        <span class="ap v">C#/.NET</span>
         <span class="ap v">MongoDB</span>
-        <span class="ap v">Google Cloud/ADK</span>
-        <span class="ap v">AWS Bedrock</span>
+        <span class="ap c">Google Cloud/ADK</span>
+        <span class="ap c">AWS Bedrock</span>
+        <span class="ap c">RESTful APIs</span>
         <span class="ap c">Figma</span>
         <span class="ap c">Git</span>
         <span class="ap c">Docker</span>
+        <span class="ap c">Material UI</span>
         <span class="ap n">UI/UX Design</span>
         <span class="ap n">Client Communication</span>
-        <span class="ap n">Full-Stack Development</span>
+        <span class="ap n">Mentorship</span>
+        <span class="ap n">Volunteering</span>
       </div>
     </div>
   </section>
@@ -1295,12 +1309,12 @@
 
       <!-- EDIT: Update each role, company, dates, description, tags -->
       <div class="exp-item reveal from-bottom">
-        <div class="exp-date">2025 — Present</div>
+        <div class="exp-date">June 2025 — Present</div>
         <div>
           <div class="exp-role">Software Engineer II</div>
           <div class="exp-co">Deloitte</div>
-          <div class="exp-desc">Led architecture of a real-time data pipeline serving 10M+ events/day. Drove design
-            system adoption across 3 product teams and mentored junior engineers.</div>
+          <div class="exp-desc">Led the front-end development of 7 generative AI-powered risk analysis tools, driving over 99% reduction in time required 
+to generate cybersecurity control artifacts (from weeks to 10 minutes) - all demoed to agency stakeholders.</div>
           <div class="exp-tags">
             <span class="exp-tag">React.js</span>
             <span class="exp-tag">Python</span>
@@ -1311,12 +1325,13 @@
       </div>
 
       <div class="exp-item reveal from-bottom" style="transition-delay:0.1s">
-        <div class="exp-date">2021 — 2025</div>
+        <div class="exp-date">September 2021 — May 2025</div>
         <div>
           <div class="exp-role">Software Engineer I</div>
           <div class="exp-co">Deloitte</div>
-          <div class="exp-desc">Built core API services and redesigned the user dashboard — reducing support tickets by
-            35% and improving onboarding completion by 60%.</div>
+          <div class="exp-desc">Created and optimized real-time factory simulation dashboards using React, enabling manufacturing clients to visualize key 
+performance indicators, identify bottlenecks, and proactively address operational inefficiencies, resulting in measurable 
+reductions in plant downtime.</div>
           <div class="exp-tags">
             <span class="exp-tag">React</span>
             <span class="exp-tag">Angular</span>
@@ -1327,12 +1342,12 @@
       </div>
 
       <div class="exp-item reveal from-bottom" style="transition-delay:0.2s">
-        <div class="exp-date">2020</div>
+        <div class="exp-date">Summer 2020</div>
         <div>
           <div class="exp-role">Business Technology Summer Scholar</div>
           <div class="exp-co">Deloitte</div>
-          <div class="exp-desc">Full-stack development across web and mobile products, working closely with design and
-            product teams to ship features used by thousands daily.</div>
+          <div class="exp-desc">Completed a virtual consulting program developing client engagement and problem-solving skills through a simulated project 
+optimizing restaurant operations during the COVID-19 pandemic.</div>
           <div class="exp-tags">
             <span class="exp-tag">Excel</span>
             <span class="exp-tag">PowerPoint</span>
@@ -1342,12 +1357,12 @@
       </div>
 
       <div class="exp-item reveal from-bottom" style="transition-delay:0.2s">
-        <div class="exp-date">2019</div>
+        <div class="exp-date">Summer 2019</div>
         <div>
           <div class="exp-role">Software Engineer Intern</div>
           <div class="exp-co">General Dynamics Mission Systems</div>
-          <div class="exp-desc">Full-stack development across web and mobile products, working closely with design and
-            product teams to ship features used by thousands daily.</div>
+          <div class="exp-desc">Developed a high-performance simulation tool using C++ socket programming and multithreading, modeling critical system 
+interactions for an early-stage defense project while under a secret DoD security clearance.</div>
           <div class="exp-tags">
             <span class="exp-tag">C++</span>
             <span class="exp-tag">SQL</span>
@@ -1367,38 +1382,30 @@
       <!-- EDIT: Update project title, description, tag, and href on the arrow -->
       <div class="proj-card pv reveal from-bottom">
         <div class="wash"></div>
-        <div class="pc-tag">Case study</div>
-        <div class="pc-title">Project Name</div>
-        <div class="pc-desc">A short description of the project — what it was, what you did, and what the outcome was
-          for users or the business.</div>
-        <div class="pc-arrow">View project →</div>
+        <div class="pc-tag">Agentic POC</div>
+        <div class="pc-title">Multi-Agent Cyber Defense System</div>
+        <div class="pc-desc">Team of agents working together to triage alerts, find supporting evidence, and provide step-by-step resolutions.</div>
       </div>
 
       <div class="proj-card pc reveal from-bottom" style="transition-delay:0.08s">
         <div class="wash"></div>
-        <div class="pc-tag">Design system</div>
-        <div class="pc-title">Project Name</div>
-        <div class="pc-desc">A short description of the project — what it was, what you did, and what the outcome was
-          for users or the business.</div>
-        <div class="pc-arrow">View project →</div>
+        <div class="pc-tag">Rapid Prototyping</div>
+        <div class="pc-title">GenAI Cybersecurity Accelerators</div>
+        <div class="pc-desc">Applications to automate document generation for cyber analysts by providing a starting draft and offering a custom chatbot to refine details and answer questions.</div>
       </div>
 
       <div class="proj-card pc reveal from-bottom" style="transition-delay:0.16s">
         <div class="wash"></div>
-        <div class="pc-tag">Dev tools</div>
-        <div class="pc-title">Project Name</div>
-        <div class="pc-desc">A short description of the project — what it was, what you did, and what the outcome was
-          for users or the business.</div>
-        <div class="pc-arrow">View project →</div>
+        <div class="pc-tag">Personnel Development</div>
+        <div class="pc-title">ResumeBuilder</div>
+        <div class="pc-desc">Modernized version of macro-enabled Word document that optimizes the creation of a company-style resume for every practitioner across the globe.</div>
       </div>
 
       <div class="proj-card pv reveal from-bottom" style="transition-delay:0.24s">
         <div class="wash"></div>
         <div class="pc-tag">Branding</div>
-        <div class="pc-title">Project Name</div>
-        <div class="pc-desc">A short description of the project — what it was, what you did, and what the outcome was
-          for users or the business.</div>
-        <div class="pc-arrow">View project →</div>
+        <div class="pc-title">Personal Website</div>
+        <div class="pc-desc">This website you are currently on! Using Claude Code and GitHub pages, I orchestrated the design and flow of this application - personalized to help you learn more about me.</div>
       </div>
 
     </div>
@@ -1437,6 +1444,7 @@
       </div>
 
       <div class="fun-card training reveal from-bottom" style="transition-delay:0.16s">
+        <div class="now-dot">Now doing</div>
         <span class="fc-emoji">🏋️</span>
         <div class="fc-label">Training</div>
         <!-- EDIT: Update workout type -->
@@ -1450,11 +1458,11 @@
 
       <div class="fun-card music wide reveal from-bottom" style="transition-delay:0.24s">
         <div class="fc-content">
-          <div class="fc-label"><span class="fc-emoji">🎵</span>Favorite playlist</div>
+          <div class="fc-label" style="display: flex; align-items: center; gap: 6px;"><span class="fc-emoji" style="margin-bottom: 0; display: inline;">🎵</span>Favorite playlist</div>
           <div class="fun-card wide reveal from-bottom" style="transition-delay:0.24s; padding: 0; overflow: hidden;">
             <iframe data-testid="embed-iframe" style="border-radius:12px"
               src="https://open.spotify.com/embed/album/0DF3kwrzlaQE913rO80kUI?utm_source=generator&theme=0"
-              width="100%" height="352" frameBorder="0" allowfullscreen=""
+              width="100%" height="450" frameBorder="0" allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"></iframe>
           </div>
@@ -1465,6 +1473,7 @@
       <div style="display: flex; flex-direction: column; gap: 10px;">
 
         <div class="fun-card food reveal from-bottom" style="transition-delay:0.32s;">
+          <span class="fc-emoji">🍜</span>
           <div class="fc-label">Meal on repeat</div>
           <div class="fc-value">Easy Orange Chicken</div>
           <div class="fc-sub">This meal was a staple in my college apartment, and I still make it to this day!</div>
@@ -1490,6 +1499,7 @@
         </div>
 
         <div class="fun-card book reveal from-bottom" style="transition-delay:0.4s; border-top: 3px solid #740e72;">
+          <span class="fc-emoji">📚</span>
           <div class="fc-label">Currently reading</div>
           <div class="fc-value">The Biblio Diet</div>
           <div class="fc-sub">Jordin Rubin, Josh Axe</div>
@@ -1508,14 +1518,14 @@
     <div class="contact-inner reveal from-bottom" style="transition-delay:0.1s">
       <div class="contact-h">Let's make something<br><strong>great together.</strong></div>
       <!-- EDIT: Update tagline -->
-      <p class="contact-sub">Always open to interesting conversations, new projects, or opportunities. I try to respond
+      <p class="contact-sub">Always open to interesting conversations, new opportunities, and ways to get involved. I respond
         within a day or two.</p>
       <div class="contact-links">
         <!-- EDIT: Replace # with your actual links -->
         <a href="mailto:ericabertolozzi@gmail.com" class="c-btn primary">Email me</a>
         <a href="https://linkedin.com/in/ericabertolozzi" target="_blank" class="c-btn">LinkedIn</a>
         <a href="https://github.com/ericabertolozzi" target="_blank" class="c-btn">GitHub</a>
-        <a href="/resume.pdf" target="_blank" class="c-btn">Resume</a>
+        <a href="./EricaBertolozzi_Resume_042026.pdf" target="_blank" class="c-btn">Resume</a>
       </div>
     </div>
   </section>
